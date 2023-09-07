@@ -1,7 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
-
 import dotenv from "dotenv";
+import LiftRouter from "./routes/lift";
+
 dotenv.config();
 
 const app = express();
@@ -10,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("trust proxy", false);
 
 // Use the routes
-// app.use("/api");
+app.use("/lifts", LiftRouter);
 
 const DBConnectionString = process.env.DB_URL;
 const Port = process.env.PORT;
