@@ -1,8 +1,7 @@
 {
   "name": "lift-list-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "Lift List - API - by AHK",
   "scripts": {
     "start:dev": "nodemon ./src/index.ts",
     "build": "tsc -p .",
